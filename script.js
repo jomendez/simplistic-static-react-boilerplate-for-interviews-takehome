@@ -7,8 +7,6 @@ function List(props) {
     function toggle(id) {
         store.dispatch(props.toggle(id))
     }
-
-
     return (
         <ul>
             {(props && props.items && props.items.length > 0) && props.items.map(item => {
@@ -28,7 +26,6 @@ function List(props) {
 }
 
 class Todos extends React.Component {
-
     render() {
         return (
             <div>
